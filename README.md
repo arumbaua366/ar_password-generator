@@ -1,6 +1,6 @@
 Random Password Generator
 
-General Notes for Self
+General Notes
 - Main goal: (1) Click Generate Password button to generate random password using letters, numbers, symbols. (2) Copy newly created password to the clipboard.
 - What the page does:
 - activate generate password button
