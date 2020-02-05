@@ -66,10 +66,18 @@ function charLengthActivate(event){
     charLength.value = value
 }
 
-// copies password to clipboard
+// // copies password to clipboard
+// function clipboardCopy(){
+//     var copyText = passDisplay.value;
+//     copyText.select(); // it is saying this copyText.select() is not a function? Could you please let me know why this is not working? Thanks!
+//     document.execCommand("copy")
+//     alert("Copied to Clipboard!")
+// }
+
 function clipboardCopy(){
-    var copyText = passDisplay.value;
-    copyText.select(); // it is saying this copyText.select() is not a function? Could you please let me know why this is not working? Thanks!
+    // var copyText = passDisplay.value; // this should be an element in your document, rather than just a string/number
+    var copyText = passDisplay // <--this just sets copyText to point to the same element as passDisplay
+    copyText.select(); // ...now select function should be defined!
     document.execCommand("copy")
     alert("Copied to Clipboard!")
 }
